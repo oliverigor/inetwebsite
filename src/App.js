@@ -9,12 +9,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-
-          <h1 className="App-title">igor Lindo </h1>
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+          <Navbar/>
         </header>
-        <p className="App-intro">
-          To get started, edit and save to reload.
-        </p>
+
+      <section className="section">
+        <ShopArea/>
+      </section>
+
+
       </div>
     );
   }
