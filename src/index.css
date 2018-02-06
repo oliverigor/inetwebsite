@@ -3,11 +3,9 @@ body, h1,h2,h3,p,input, button {
   padding: 0;
   font-family: 'Rubik', sans-serif;
   position: relative;
-
 }
 
 .section {
-
   position: relative;
   display: inline-block;
   height: 300px;
@@ -20,12 +18,11 @@ body, h1,h2,h3,p,input, button {
 }
 
 .card{
-
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
 	width: 350px;
 	padding: 40px;
-	padding-bottom: 100px;
+	padding-bottom: 70px;
 	position: relative;
 	transition: all 0.4s;
   margin-bottom: 20px;
@@ -41,13 +38,10 @@ body, h1,h2,h3,p,input, button {
 	width: 100%;
 }
 .card:hover{
-
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-
 }
 
 a {
-
 	cursor: pointer;
 	background: #FF5151;
 	color: white;
@@ -59,5 +53,20 @@ a {
 	left: 0px;
 	width:40%;
 	border-radius: 20px;
+}
 
+.div-style{
+  position:absolute;
+  left:5%;
+  right:5%;
+  top:-120%;
+  text-align:left;
+  padding:60px;
+  background:#FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.img-fit{
+	width: 100%;
 }
