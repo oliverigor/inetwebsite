@@ -10,7 +10,7 @@ class Navbar extends Component{
 
   render() {
     return(
-    <div style={navbarStyle}className="navbar">
+    <div style={navbarStyle} className="navbar">
 
 
       <button>Sobre</button>
