@@ -1,0 +1,46 @@
+[
+  {
+    "modelo": "Vaio s13",
+    "desc":
+      "Solicitação de demanda para alterar um sistema existente - manutenção evolutiva ou corretiva - ou para criação de um novo sistema.",
+    "price": "",
+    "pic1": "https://image.ibb.co/hACZZJ/1000x1000_s13_bk_side.jpg",
+    "pic2": "https://image.ibb.co/nvrHod/1000x1000_s13_bk_kb_e.jpg",
+    "pic3": "https://image.ibb.co/bWTV8d/1000x1000_s13_bk_left.jpg",
+    "pic4": "https://image.ibb.co/iMCq8d/1000x1000_s13_bk_right_vaio.jpg",
+    "pic5": "https://image.ibb.co/f1M6gy/1000x1000_s13_bk_front_vaio.jpg"
+  },
+  {
+    "modelo": "Vaio s11",
+    "desc":
+      "Solicitação de demanda para alterar um sistema existente - manutenção evolutiva ou corretiva - ou para criação de um novo sistema.",
+    "price": "",
+    "pic1": "https://image.ibb.co/fEhq8d/Vaio_S11_01.jpg",
+    "pic2": "https://image.ibb.co/iAPgEJ/Vaio_S11_02.jpg",
+    "pic3": "https://image.ibb.co/fp0MEJ/Vaio_S11_03.jpg",
+    "pic4": "https://image.ibb.co/b4T8uJ/Vaio_S11_04.jpg",
+    "pic5": "https://image.ibb.co/kw6Hod/Vaio_S11_05.jpg"
+  },
+  {
+    "modelo": "Vaio c14",
+    "desc":
+      "Solicitação de demanda para alterar um sistema existente - manutenção evolutiva ou corretiva - ou para criação de um novo sistema.",
+    "price": "",
+    "pic1": "https://image.ibb.co/irBuZJ/Vaio_C14_01.jpg",
+    "pic2": "https://image.ibb.co/motmgy/Vaio_C14_02.jpg",
+    "pic3": "https://image.ibb.co/cYHq8d/Vaio_C14_03.jpg",
+    "pic4": "https://image.ibb.co/eqfA8d/Vaio_C14_04.jpg",
+    "pic5": ""
+  },
+  {
+    "modelo": "Vaio Fit 15",
+    "desc":
+      "Solicitação de demanda para alterar um sistema existente - manutenção evolutiva ou corretiva - ou para criação de um novo sistema.",
+    "price": "",
+    "pic1": "https://image.ibb.co/niR6gy/NTB_Vaio_Fit15_S_3_D_05_1000x1000.jpg",
+    "pic2": "https://image.ibb.co/n0dK1y/NTB_Vaio_Fit15_S_3_D_10_1000x1000.jpg",
+    "pic3": "https://image.ibb.co/nthe1y/NTB_Vaio_Fit15_S_3_D_12_1000x1000.jpg",
+    "pic4": "https://image.ibb.co/joHq8d/NTB_Vaio_Fit15_S_3_D_17_1000x1000.jpg",
+    "pic5": ""
+  }
+]

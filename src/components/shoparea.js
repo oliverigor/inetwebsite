@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "../index.css";
-import PosiPc from "../pc1.png";
+import PosiPc from "../images//pc1.png";
 import Modal from "react-modal";
 import { Carousel } from "react-bootstrap";
+import data from "./pchash.json";
 
 const customStyles = {
   content: {
@@ -45,137 +46,78 @@ class ShopArea extends Component {
     return (
       <div className="div-style">
         <div className="temcard">
-          <div className="card">
-            <div>
-              {/* <Carousel>
-                <img src={PosiPc} className="img-fit" />
-                <img src={PosiPc} className="img-fit" />
-                <img src={PosiPc} className="img-fit" />
-              </Carousel> */}
-              <Carousel>
-                <Carousel.Item>
-                  <img src={PosiPc} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={PosiPc} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={PosiPc} />
-                </Carousel.Item>
-              </Carousel>
-            </div>
-            <hr />
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a onClick={this.openModal}>Comprar</a>
-            <Modal
-              isOpen={this.state.modalIsOpen}
-              onAfterOpen={this.afterOpenModal}
-              onRequestClose={this.closeModal}
-              style={customStyles}
-              contentLabel="Example Modal"
-            >
-              <p>VEEEEI EHUAHAUEHUAHUAEH</p>
+          {data.map(pc => {
+            return (
               <div className="card">
                 <div>
                   <Carousel>
                     <Carousel.Item>
-                      <img src={PosiPc} />
+                      <img src={pc.pic1} />
                     </Carousel.Item>
                     <Carousel.Item>
-                      <img src={PosiPc} />
+                      <img src={pc.pic2} />
                     </Carousel.Item>
                     <Carousel.Item>
-                      <img src={PosiPc} />
+                      <img src={pc.pic3} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img src={pc.pic4} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img src={pc.pic5} />
                     </Carousel.Item>
                   </Carousel>
                 </div>
                 <hr />
-                <p>
-                  Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-                  público experiências simples e inovadoras dos jogos, a Mad
-                  Pixel se estabeleceu no mercado após vencer a game jam na JAM
-                  NERD FESTIVAL.
-                </p>
-                <a onClick={this.onOpenModal}>Comprar</a>
+                <p>{pc.modelo}</p>
+                <p />
+                <a onClick={this.openModal}>Comprar</a>
+                <Modal
+                  isOpen={this.state.modalIsOpen}
+                  onAfterOpen={this.afterOpenModal}
+                  onRequestClose={this.closeModal}
+                  style={customStyles}
+                  contentLabel="Example Modal"
+                >
+                  <p>VEEEEI EHUAHAUEHUAHUAEH</p>
+                  <div className="card">
+                    <div>
+                      <Carousel>
+                        <Carousel.Item>
+                          <img src={pc.pic1} />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img src={pc.pic2} />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img src={pc.pic3} />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img src={pc.pic4} />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img src={pc.pic5} />
+                        </Carousel.Item>
+                      </Carousel>
+                    </div>
+                    <hr />
+                    <p>
+                      {/* 
+                        <a href="https://imgbb.com/"><img src="https://image.ibb.co/dJ21EJ/D365_04.jpg" alt="D365_04" border="0"></a>
+                        <a href="https://imgbb.com/"><img src="https://image.ibb.co/m2riTd/D365_03_1.jpg" alt="D365_03_1" border="0"></a>
+                          <a href="https://imgbb.com/"><img src="https://image.ibb.co/hB88uJ/D365_03.jpg" alt="D365_03" border="0"></a>
+                        <a href="https://imgbb.com/"><img src="https://image.ibb.co/dhriTd/D635_02.jpg" alt="D635_02" border="0"></a>
+                        <a href="https://imgbb.com/"><img src="https://image.ibb.co/bYAMEJ/D365.jpg" alt="D365" border="0"></a>
+                        <a href="https://imgbb.com/"><img src="https://image.ibb.co/jHuRgy/T50_angulo2.jpg" alt="T50_angulo2" border="0"></a>
+                        <a href="https://imgbb.com/"><img src="https://image.ibb.co/cq9sMy/master_C1002.jpg" alt="master_C1002" border="0"></a>
+                      <a href="https://imgbb.com/"><img src="https://image.ibb.co/g6KEZJ/pc1.png" alt="pc1" border="0"></a> */}
+                    </p>
+                    <a onClick={this.onOpenModal}>Comprar</a>
+                  </div>
+                </Modal>
               </div>
-            </Modal>
-          </div>
-          <div className="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
-
-          <div class="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
-          <div class="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
-          <div class="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
-          <div class="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
-          <div class="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
-          <div class="card">
-            <h3>Jogos</h3>
-            <p>
-              Fundada em Novembro de 2014 e com o objetivo de disseminar ao
-              público experiências simples e inovadoras dos jogos, a Mad Pixel
-              se estabeleceu no mercado após vencer a game jam na JAM NERD
-              FESTIVAL.
-            </p>
-            <a>Comprar</a>
-          </div>
+            );
+          })}
         </div>
       </div>
     );
