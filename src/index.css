@@ -36,6 +36,9 @@ button {
   box-sizing: border-box;
   margin-right: 15px;
 }
+.img-card {
+  height: 270px !important;
+}
 
 .temcard {
   display: flex;
